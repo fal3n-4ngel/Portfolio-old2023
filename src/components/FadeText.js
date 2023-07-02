@@ -1,40 +1,57 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
-const FadeText= ({ children }) => {
+const FadeText = ({ children }) => {
   const textRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            const [entry] = entries;
-            setIsVisible(entry.isIntersecting);
-        });
-
-        observer.observe(textRef.current);
-
-        return () => {
-            observer.unobserve(textRef.current);
-        };
-    }, []);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
 
   useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const [entry] = entries;
+      setIsVisible(entry.isIntersecting);
+    });
 
+    observer.observe(textRef.current);
+
+    return () => {
+      observer.unobserve(textRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
     if (isVisible) {
-        const lines = textRef.current.children;
-        const tl = gsap.timeline();
-        tl.from(lines, { duration: 1.5, y: '100%', opacity: 0, ease: 'power3.out' ,delay:0.4});
-    lines
-        
-    }
-}, [isVisible]);
+      const lines = Array.from(textRef.current.children);
 
-    
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      tl.set(lines, { visibility: 'hidden' });
+      tl.from(lines, {
+        duration: 1.5,
+        y: isScrollingUp ? '-100%' : '100%',
+        opacity: 0,
+        visibility: 'visible',
+        delay:0.4
+      });
+    }
+  }, [isVisible, isScrollingUp]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrollingUp(window.pageYOffset < 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className="relative">
-      <span ref={textRef} className="">
+      <span ref={textRef} className="block">
         {children}
       </span>
     </div>
