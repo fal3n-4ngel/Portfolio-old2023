@@ -24,7 +24,7 @@ const FadeText= ({ children }) => {
     if (isVisible) {
         const lines = textRef.current.children;
         const tl = gsap.timeline();
-        tl.from(lines, { duration: 1, y: '100%', opacity: 0, ease: 'power3.out' ,delay:0.8});
+        tl.from(lines, { duration: 1.5, y: '100%', opacity: 0, ease: 'power3.out' ,delay:0.4});
     lines
         
     }
