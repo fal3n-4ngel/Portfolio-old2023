@@ -7,17 +7,22 @@ const TextReveal = ({ children }) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            const [entry] = entries;
-            setIsVisible(entry.isIntersecting);
-        });
-
-        observer.observe(textRef.current);
-
-        return () => {
-            observer.unobserve(textRef.current);
-        };
-    }, []);
+        const observer = new IntersectionObserver(
+            (entries) => {
+              const [entry] = entries;
+              setIsVisible(entry.isIntersecting);
+            },
+            {
+              
+            }
+          );
+      
+          observer.observe(textRef.current);
+      
+          return () => {
+            
+          };
+        }, []);
 
     useEffect(() => {
         if (isVisible) {
@@ -27,8 +32,8 @@ const TextReveal = ({ children }) => {
                 opacity: 0,
                 x: 150,
                 duration: 1.6,
-                delay:0.8,
-                stagger: 0.2,
+                delay:0.6,
+                stagger: 0.3,
                 ease: 'power3.out',
             });
         }

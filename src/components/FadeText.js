@@ -5,18 +5,22 @@ import { gsap } from 'gsap';
 const FadeText = ({ children }) => {
   const textRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [isScrollingUp, setIsScrollingUp] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const [entry] = entries;
-      setIsVisible(entry.isIntersecting);
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.2, 
+      }
+    );
 
     observer.observe(textRef.current);
 
     return () => {
-      observer.unobserve(textRef.current);
+      
     };
   }, []);
 
@@ -26,28 +30,16 @@ const FadeText = ({ children }) => {
 
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-      tl.set(lines, { visibility: 'hidden' });
-      tl.from(lines, {
+      tl.set(lines, { opacity: 0.2, y: '50%' });
+      tl.to(lines, {
         duration: 1.5,
-        y: isScrollingUp ? '-100%' : '100%',
-        opacity: 0,
-        visibility: 'visible',
-        delay:0.4
+        y: '0%',
+        opacity: 1,
+        
+        
       });
     }
-  }, [isVisible, isScrollingUp]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrollingUp(window.pageYOffset < 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  }, [isVisible]);
 
   return (
     <div className="relative">
