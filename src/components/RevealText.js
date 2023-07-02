@@ -27,7 +27,7 @@ const TextReveal = ({ children }) => {
                 opacity: 0,
                 x: 150,
                 duration: 1.6,
-                delay:1.0,
+                delay:0.8,
                 stagger: 0.2,
                 ease: 'power3.out',
             });
