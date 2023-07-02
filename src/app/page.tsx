@@ -36,8 +36,7 @@ export default function Home() {
               challenging problems.
             </div>
             <div className=" text-4xl m-10 ease-in ">
-              I spent my free time either watching anime,movies , reading or
-              coding stupid stuffs
+              I spent my free time either &lsquo;watching or reading or coding&rsquo; stupid stuffs.
             </div>
           </div>
           <div className="flex flex-col w-[50%] text-lg pl-[20%]">
