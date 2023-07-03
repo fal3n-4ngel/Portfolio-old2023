@@ -16,6 +16,9 @@ const TextReveal: React.FC<TextRevealProps> = ({ children }) => {
     const observer = new IntersectionObserver((entries) => {
       const [entry] = entries;
       setIsVisible(entry.isIntersecting);
+    },
+    {
+      threshold: 0.001,
     });
 
     if (textRef.current) {
