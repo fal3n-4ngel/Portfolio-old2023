@@ -25,11 +25,16 @@ export default function Home() {
             linkedin
           </a>
         </div>
-        <a href="mailto:adiadithyakrishnan@gmail.com" className="invisible md:visible">contact</a>
+        <a
+          href="mailto:adiadithyakrishnan@gmail.com"
+          className="invisible md:visible"
+        >
+          contact
+        </a>
       </nav>
       <div className="h-full  hidden  md:flex font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full px-[18%] py-[20%] items-center">
         <RevealText>
-          <div > I&apos;m Adi - a Multidisciplinary </div>
+          <div> I&apos;m Adi - a Multidisciplinary </div>
           <div> Developer with a focus on Web, </div>
           <div> App dev and Scripting </div>
         </RevealText>
@@ -127,7 +132,9 @@ export default function Home() {
       </div>
 
       <div className="min-h-screen font-light text-4xl md:w-[75%] p-10 md:p-0 mx-auto">
-        <FadeText><div className="text-6xl">Projects</div></FadeText>
+        <FadeText>
+          <div className="text-6xl">Projects</div>
+        </FadeText>
         <FadeText>
           <Projcard
             url1="/drishti.png"
@@ -162,11 +169,21 @@ export default function Home() {
             view="https://github.com/fal3n-4ngel/SusGoals"
           />
         </FadeText>
-       
+      </div>
+      <div className="flex justify-center text-3xl my-[100px] font-thin text-slate-300">
         
+        <div className="flex flex-col">
+        :&gt; Adithya Krishnan 2023 
+        <a
+          className="hover:cursor-pointer items-center text-center hover:scale-125 hover:text-white transition-all mt-5"
+          href="https://github.com/fal3n-4ngel"
+        >
+          Github
+        </a>
+        <div className="text-slate-400 font-thin text-center text-xl mt-10"> Work on Progess!!</div>
+        </div>
         
       </div>
-      <div className="flex justify-center text-3xl my-[100px] font-thin text-slate-300">:&gt; Adithya Krishnan 2023</div>
     </main>
   );
 }
