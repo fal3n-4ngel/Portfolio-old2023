@@ -40,7 +40,7 @@ function Projcard(props: projProps) {
             alt={props.name}
             className="w-full object-cover overflow-hidden  md:h-[95%]"
             width={1980}
-            height={900}
+            height={1900}
           />
         </SplideSlide>
         <SplideSlide>
@@ -49,7 +49,7 @@ function Projcard(props: projProps) {
             alt={props.name}
             className="w-full object-cover overflow-hidden  md:h-[95%]"
             width={1980}
-            height={900}
+            height={1900}
             
           />
         </SplideSlide>
@@ -59,7 +59,7 @@ function Projcard(props: projProps) {
             alt={props.name}
             className="w-full object-cover overflow-hidden  md:h-[95%]"
             width={1980}
-            height={900}
+            height={1900}
           />
         </SplideSlide>
       </Splide>
