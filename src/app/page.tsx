@@ -165,7 +165,7 @@ export default function Home() {
             
             "
             type="Website"
-            event="Collge Project"
+            event="College Project"
             view="https://github.com/fal3n-4ngel/SusGoals"
           />
         </FadeText>
@@ -180,7 +180,7 @@ export default function Home() {
         >
           Github
         </a>
-        <div className="text-slate-400 font-thin text-center text-xl mt-10"> Work on Progess!!</div>
+        <div className="text-slate-400 font-thin text-center text-xl mt-10"> Work in Progess!!</div>
         </div>
         
       </div>
