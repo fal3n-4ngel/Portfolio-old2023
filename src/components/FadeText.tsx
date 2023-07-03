@@ -17,7 +17,7 @@ const FadeText: React.FC<FadeTextProps> = ({ children }) => {
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.1,
+        threshold: 0.001,
       }
     );
 
@@ -38,7 +38,7 @@ const FadeText: React.FC<FadeTextProps> = ({ children }) => {
 
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-      tl.set(lines, { opacity: 0.2, y: '30%' });
+      tl.set(lines, { opacity: 0.2, y: '35%' });
       tl.to(lines, {
         duration: 1.5,
         y: '0%',
