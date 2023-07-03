@@ -34,7 +34,7 @@ export default function Home() {
       </nav>
       <div className="h-full  hidden  md:flex font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full px-[18%] py-[20%] items-center">
         <RevealText>
-          <div> I&apos;m Adi - a Multidisciplinary </div>
+          <div> I&apos;m Adi - a Versatile </div>
           <div> Developer with a focus on Web, </div>
           <div> App dev and Scripting </div>
         </RevealText>
@@ -42,7 +42,7 @@ export default function Home() {
       <div className="h-full mt-16 flex md:hidden font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full px-[18%] py-[20%] items-center">
         <RevealText>
           <div>
-            I&apos;m Adi - a Multidisciplinary Developer with a focus on Web,
+            I&apos;m Adi - a Versatile Developer with a focus on Web,
             App dev and Scripting
           </div>
         </RevealText>
