@@ -35,16 +35,16 @@ export default function Home() {
       <div className="h-full  hidden  md:flex font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full px-[18%] py-[20%] items-center">
         <RevealText>
           <div> I&apos;m Adi - a Versatile Developer </div>
-          <div> adept in the realms of  Web, </div>
+          <div> adept in the realms of Web, </div>
           <div> App dev and Scripting </div>
         </RevealText>
       </div>
       <div className="h-full mt-16 flex md:hidden font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full px-[18%] py-[20%] items-center">
         <RevealText>
-          <div>
-            I&apos;m Adi - a Versatile Developer adept in the realms of Web,
-            App dev and Scripting
-          </div>
+          <div>I&apos;m Adi - a Versatile </div>
+          <div>Developer adept in the</div>
+          <div> realms of Web, App dev and</div>
+          <div> Scripting</div>
         </RevealText>
       </div>
 
@@ -135,23 +135,7 @@ export default function Home() {
         <FadeText>
           <div className="text-6xl">Projects</div>
         </FadeText>
-        <FadeText>
-          <Projcard
-            url1="/drishti.png"
-            url2="/drishti1.png"
-            url3="/drishti2.png"
-            name="Drishti Client"
-            description="
-            Drishti client is a client side flutter application
-            for Drishti that will be available to public through 
-            which they can report and get updates about accidents 
-            and other notable incidents in the locailty
-            "
-            type="App (Android,Ios)"
-            event="Define Hackathon 2022"
-            view="https://github.com/fal3n-4ngel/Drishti-Client"
-          />
-        </FadeText>
+
         <FadeText>
           <Projcard
             url1="/sus.png"
@@ -164,25 +148,59 @@ export default function Home() {
              and click the done button, it will increment the world wide counter for the goals reached. 
             
             "
-            type="Website"
+            type="Website | React.js , Next.js, Typescript , Tailwindcss , Firebase"
             event="College Project"
             view="https://sus-goals.vercel.app/"
           />
         </FadeText>
+        <FadeText>
+          <Projcard
+            url1="/drishti.png"
+            url2="/drishti1.png"
+            url3="/drishti2.png"
+            name="Drishti Client"
+            description="
+            Drishti client is a client side flutter application
+            for Drishti that will be available to public through 
+            which they can report and get updates about accidents 
+            and other notable incidents in the locailty
+            "
+            type="App | Flutter , Firebase , MongoDB "
+            event="Define Hackathon 2022"
+            view="https://github.com/fal3n-4ngel/Drishti-Client"
+          />
+        </FadeText>
+        <FadeText>
+          <Projcard
+            url1="/c.png"
+            url2="/c1.png"
+            url3="/c2.png"
+            name="C Tracker"
+            description="
+            C-Tracker or Curriculum-Tracker is a todo App themed for academic purposes , 
+            developed as a micro project for Semester 3 Object Oriented Java. Simply a 
+            fancy todo app that we coded in a single sleepless night.
+            "
+            type="Desktop | Java Swing , SqlLite"
+            event="College Micro Project"
+            view="https://github.com/fal3n-4ngel/CTracker"
+          />
+        </FadeText>
       </div>
       <div className="flex justify-center text-3xl my-[100px] font-thin text-slate-300">
-        
-        <div className="flex flex-col">
-        :&gt; Adithya Krishnan 2023 
-        <a
-          className="hover:cursor-pointer items-center text-center hover:scale-125 hover:text-white transition-all mt-5"
-          href="https://github.com/fal3n-4ngel"
-        >
-          Github
-        </a>
-        <div className="text-slate-400 font-thin text-center text-xl mt-10"> Work in Progess!!</div>
+        <div className="flex flex-col text-center">
+          :&gt; Adithya Krishnan 2023
+          <a
+            className="hover:cursor-pointer items-center text-center hover:scale-125 hover:text-white transition-all mt-5"
+            href="https://github.com/fal3n-4ngel"
+          >
+            Github
+          </a>
+          <div className="text-slate-600 font-light text-center text-2xl mt-10">
+            {" "}
+            Visit my github to see rest of my works.
+          </div>
         </div>
-        
       </div>
     </main>
   );
