@@ -1,6 +1,7 @@
 import Image from "next/image";
 import RevealText from "@/components/RevealText";
 import FadeText from "@/components/FadeText";
+import Projcard from "@/components/Projcard";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <nav className="fixed w-full  z-10 flex justify-between py-14 px-[18%] text-xl ">
         <div className="hover:cursor-pointer">Adi</div>
         <div className="flex gap-[40%]">
-          <a className="hover:cursor-pointer" href="">
+          <a className="hover:cursor-pointer" href="#">
             home
           </a>
           <a
@@ -42,7 +43,7 @@ export default function Home() {
         </RevealText>
       </div>
 
-      <div className="flex min-h-screen font-light leading-relaxed ">
+      <div className="flex min-h-screen font-light leading-relaxed pointer-events-none">
         <>
           <div className="flex md:flex-row flex-col p-2 md:p-0 md:w-[75%] mx-auto ">
             <div className="flex flex-col md:w-[50%]">
@@ -71,7 +72,7 @@ export default function Home() {
                 <div className=" text-2xl text-zinc-700 mt-5 py-2 font-semibold ">
                   experience
                 </div>
-          
+
                 <div className="py-1">
                   <div className="font-semibold">Techinal Co Lead </div>
                   <div>IEEE MBCET Chapter</div>
@@ -86,8 +87,8 @@ export default function Home() {
                     April 2023 - May 2023
                   </div>
                 </div>
-                </FadeText>
-                <FadeText>
+              </FadeText>
+              <FadeText>
                 <div className="py-1">
                   <div className="font-semibold">
                     Cloud Facilitator
@@ -109,26 +110,74 @@ export default function Home() {
                 </div>
               </FadeText>
               <FadeText>
-              <div className=" text-2xl text-zinc-700 mt-5 py-2 font-semibold ">
-                skills
-              </div>
-              <div className="flex flex-col font-normal space-y-1">
-                <div>React , Angular , Flutter</div>
-                <div>C , Java , Python , C#</div>
-                <div>Firebase , MongoDB , Sql</div>
-                <div>Typescript , Nextjs, Tailwind css</div>
-                <div> .NET , Kotlin, Jetpack Compose</div>
-              </div>
+                <div className=" text-2xl text-zinc-700 mt-5 py-2 font-semibold ">
+                  skills
+                </div>
+                <div className="flex flex-col font-normal space-y-1">
+                  <div>React , Angular , Flutter</div>
+                  <div>C , Java , Python , C#</div>
+                  <div>Firebase , MongoDB , Sql</div>
+                  <div>Typescript , Nextjs, Tailwind css</div>
+                  <div> .NET , Kotlin, Jetpack Compose</div>
+                </div>
               </FadeText>
             </div>
-          
           </div>
         </>
       </div>
 
       <div className="min-h-screen font-light text-4xl md:w-[75%] mx-auto">
+        <FadeText><div className="text-6xl">Projects</div></FadeText>
         <FadeText>
-          <div>Projects</div>
+          <Projcard
+            url1="drishti.png"
+            url2="drishti1.png"
+            url3="drishti2.png"
+            name="Drishti Client"
+            description="
+            Drishti client is a client side flutter application
+            for Drishti that will be available to public through 
+            which they can report and get updates about accidents 
+            and other notable incidents in the locailty
+            "
+            type="App (Android,Ios)"
+            event="Define Hackathon 2022"
+            view="https://github.com/fal3n-4ngel/Drishti-Client"
+          />
+        </FadeText>
+        <FadeText>
+          <Projcard
+            url1="drishti.png"
+            url2="drishti1.png"
+            url3="drishti2.png"
+            name="Drishti Client"
+            description="
+            Drishti client is a client side flutter application
+            for Drishti that will be available to public through 
+            which they can report and get updates about accidents 
+            and other notable incidents in the locailty
+            "
+            type="App (Android,Ios)"
+            event="Define Hackathon 2022"
+            view="https://github.com/fal3n-4ngel/Drishti-Client"
+          />
+        </FadeText>
+        <FadeText>
+          <Projcard
+            url1="drishti.png"
+            url2="drishti1.png"
+            url3="drishti2.png"
+            name="Drishti Client"
+            description="
+            Drishti client is a client side flutter application
+            for Drishti that will be available to public through 
+            which they can report and get updates about accidents 
+            and other notable incidents in the locailty
+            "
+            type="App (Android,Ios)"
+            event="Define Hackathon 2022"
+            view="https://github.com/fal3n-4ngel/Drishti-Client"
+          />
         </FadeText>
       </div>
     </main>
