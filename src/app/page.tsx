@@ -166,7 +166,7 @@ export default function Home() {
             "
             type="Website"
             event="College Project"
-            view="https://github.com/fal3n-4ngel/SusGoals"
+            view="https://sus-goals.vercel.app/"
           />
         </FadeText>
       </div>
