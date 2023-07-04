@@ -7,7 +7,7 @@ export default function Home() {
   return (
     
     <main className="items-center justify-center overflow-x-hidden">
-      <nav className="fixed w-full  z-10 flex justify-between py-14 px-[17%] text-xl ">
+      <nav className="fixed w-full  z-10 flex justify-between py-14 px-[15%] text-xl ">
         <div className="hover:cursor-pointer">Adi</div>
         <div className="flex gap-[40%] invisible md:visible">
           <a className="hover:cursor-pointer" href="#">
@@ -33,14 +33,14 @@ export default function Home() {
           contact
         </a>
       </nav>
-      <div className="h-full hidden  md:flex font-light text-4xl md:text-[4rem] leading-[5rem] tracking-[0px] w-full px-[17%] py-[20%] items-center">
+      <div className="h-full invisible md:visible   font-light text-6xl  leading-[5rem] tracking-[0px] w-full px-[15%] py-[20%] items-center">
         <RevealText>
           <div> I&apos;m Adi - a Versatile Developer </div>
           <div> adept in the realms of Web, </div>
           <div> App dev and Scripting </div>
         </RevealText>
       </div>
-      <div className="min-h-[89vh]  mt-16 flex md:hidden font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full md:px-[18%] px-[15px] py-[20%] items-center">
+      <div className="min-h-[89vh]  mt-16 flex md:hidden font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full px-[15px] py-[20%] items-center">
         <RevealText>
           <div >I&apos;m Adi - a Versatile</div>
           <div>Developer adept in </div>
