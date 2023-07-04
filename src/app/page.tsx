@@ -5,8 +5,9 @@ import Projcard from "@/components/Projcard";
 
 export default function Home() {
   return (
+    
     <main className="items-center justify-center overflow-x-hidden">
-      <nav className="fixed w-full  z-10 flex justify-between py-14 px-[18%] text-xl ">
+      <nav className="fixed w-full  z-10 flex justify-between py-14 px-[17%] text-xl ">
         <div className="hover:cursor-pointer">Adi</div>
         <div className="flex gap-[40%] invisible md:visible">
           <a className="hover:cursor-pointer" href="#">
@@ -32,7 +33,7 @@ export default function Home() {
           contact
         </a>
       </nav>
-      <div className="h-full  hidden  md:flex font-light text-4xl md:text-7xl leading-[5rem] tracking-[0px] w-full px-[18%] py-[20%] items-center">
+      <div className="h-full hidden  md:flex font-light text-4xl md:text-[4rem] leading-[5rem] tracking-[0px] w-full px-[17%] py-[20%] items-center">
         <RevealText>
           <div> I&apos;m Adi - a Versatile Developer </div>
           <div> adept in the realms of Web, </div>

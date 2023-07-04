@@ -29,7 +29,7 @@ function Projcard(props: projProps) {
           arrows: false,
           drag:true,
           
-          wheel:true,
+          
           
           
         }} 
@@ -79,12 +79,12 @@ function Projcard(props: projProps) {
         </div>
       <div className="md:text-4xl text-2xl font-thin ">{props.description}</div>
       <div className=" flex justify-center h-full items-center  ">
-          <Link
+          <a
             href={props.view}
             className="md:invisible mt-8 visible my-auto w-36 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-white shadow-slate-500 rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
           >
             View
-          </Link>
+          </a>
           </div>
       </div>
     </div>

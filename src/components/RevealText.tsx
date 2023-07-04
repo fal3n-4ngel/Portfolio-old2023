@@ -1,8 +1,6 @@
-
-"use client"
-import React, { useEffect, useRef, useState } from 'react';
-
-import { gsap } from 'gsap';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
 
 interface TextRevealProps {
   children: React.ReactNode;
@@ -11,15 +9,21 @@ interface TextRevealProps {
 const TextReveal: React.FC<TextRevealProps> = ({ children }) => {
   const textRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  if (isVisible && textRef.current) {
+    const lines = Array.from(textRef.current.children) as HTMLDivElement[];
 
+    gsap.set(lines, { opacity: 0 });
+   }
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const [entry] = entries;
-      setIsVisible(entry.isIntersecting);
-    },
-    {
-      threshold: 0.001,
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        threshold: 0.001,
+      }
+    );
 
     if (textRef.current) {
       observer.observe(textRef.current);
@@ -36,13 +40,22 @@ const TextReveal: React.FC<TextRevealProps> = ({ children }) => {
     if (isVisible && textRef.current) {
       const lines = Array.from(textRef.current.children) as HTMLDivElement[];
 
+     
+
       gsap.from(lines, {
         opacity: 0,
         x: 150,
         duration: 1.6,
+        stagger: 0.3,
+        ease: "power3.out",
+      });
+      gsap.to(lines, {
+        opacity: 1,
+        x: 0,
+        duration: 1.6,
         delay: 0.6,
         stagger: 0.3,
-        ease: 'power3.out',
+        ease: "power3.out",
       });
     }
   }, [isVisible]);

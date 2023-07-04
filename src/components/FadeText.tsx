@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
 interface FadeTextProps {
@@ -21,13 +21,15 @@ const FadeText: React.FC<FadeTextProps> = ({ children }) => {
       }
     );
 
-    if (textRef.current) {
-      observer.observe(textRef.current);
+    const currentRef = textRef.current; // Store the current value of textRef in a variable
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -38,7 +40,7 @@ const FadeText: React.FC<FadeTextProps> = ({ children }) => {
 
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-      tl.set(lines, { opacity: 0.2, y: '35%' });
+      tl.set(lines, { opacity: 0.2, y: '10%' });
       tl.to(lines, {
         duration: 1.5,
         y: '0%',
@@ -57,4 +59,3 @@ const FadeText: React.FC<FadeTextProps> = ({ children }) => {
 };
 
 export default FadeText;
-
