@@ -7,20 +7,20 @@ export default function Home() {
   return (
     
     <main className="items-center justify-center overflow-x-hidden">
-      <nav className="fixed w-full  z-10 flex justify-between py-14 px-[15%] text-xl ">
-        <div className="hover:cursor-pointer">Adi</div>
-        <div className="flex gap-[40%] invisible md:visible">
-          <a className="hover:cursor-pointer" href="#">
+      <nav className="fixed w-full  z-10 flex justify-between py-14 px-[15%] text-xl text-gray-300  ">
+        <div className="hover:cursor-pointer text-gray-100">Adi</div>
+        <div className="flex gap-[40%] invisible md:visible ">
+          <a className="hover:cursor-pointer hover:text-white transition-all" href="#">
             home
           </a>
           <a
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer hover:text-white transition-all"
             href="https://github.com/fal3n-4ngel"
           >
             github
           </a>
           <a
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer hover:text-white transition-all"
             href="https://www.linkedin.com/in/fal3n-4ngel/"
           >
             linkedin
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <a
           href="mailto:adiadithyakrishnan@gmail.com"
-          className="invisible md:visible"
+          className="invisible md:visible hover:text-white"
         >
           contact
         </a>
