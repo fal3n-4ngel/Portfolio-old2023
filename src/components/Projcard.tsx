@@ -63,25 +63,25 @@ function Projcard(props: projProps) {
           />
         </SplideSlide>
       </Splide>
-      <div className="flex md:flex-row flex-col mt-8">
-        <div className="flex flex-col w-full  md:pr-[5%] text-2xl ">
+      <div className="flex w-full md:flex-row flex-col mt-8">
+        <div className="flex flex-col md:min-w-[30%]  md:mr-[5%] text-2xl ">
           <div><span className="text-gray-400">Type : </span>{props.type}</div>
           <div><span className="text-gray-400">Event : </span>{props.event}</div>
           <div className=" flex justify-center h-full items-center ">
           <Link
             href={props.view}
-            className="md:w-36 invisible md:visible my-auto w-24 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-white shadow-slate-500 rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
+            className="md:w-36 invisible md:visible mx-auto my-auto w-24 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-white shadow-slate-500 rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
           >
             View
           </Link>
           </div>
           
         </div>
-      <div className="md:text-4xl text-2xl font-thin ">{props.description}</div>
+      <div className="md:text-4xl w-full text-2xl font-thin ">{props.description}</div>
       <div className=" flex justify-center h-full items-center  ">
           <a
             href={props.view}
-            className="md:invisible mt-8 visible my-auto w-36 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-white shadow-slate-500 rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
+            className="md:hidden flex justify-center mt-8 visible my-auto w-36 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-white shadow-slate-500 rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
           >
             View
           </a>
