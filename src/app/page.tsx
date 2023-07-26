@@ -33,7 +33,7 @@ export default function Home() {
           contact
         </a>
       </nav>
-      <div className="h-full invisible md:visible   font-light text-6xl  leading-[5rem] tracking-[0px] w-full px-[15%] py-[20%] items-center">
+      <div className="h-full hidden invisible md:visible   font-light text-6xl  leading-[5rem] tracking-[0px] w-full px-[15%] py-[20%] items-center">
         <RevealText>
           <div> I&apos;m Adi - a Versatile Developer </div>
           <div> adept in the realms of Web, </div>
