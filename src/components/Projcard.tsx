@@ -68,23 +68,23 @@ function Projcard(props: projProps) {
           <div><span className="text-gray-400">Type : </span>{props.type}</div>
           <div><span className="text-gray-400">Event : </span>{props.event}</div>
           <div className=" flex justify-center h-full items-center ">
-          <Link
+          <a
             href={props.view}
             className="md:w-36 invisible md:visible mx-auto my-auto w-24 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-white shadow-slate-500 rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
           >
             View
-          </Link>
+          </a>
           </div>
           
         </div>
       <div className="md:text-4xl w-full text-2xl font-thin ">{props.description}</div>
       <div className=" flex justify-center h-full items-center  ">
-          <Link
+          <a
             href={props.view}
             className="md:hidden flex justify-center mt-8 visible my-auto w-36 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-white shadow-slate-500 rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
           >
             View
-          </Link>
+          </a>
           </div>
       </div>
     </div>
