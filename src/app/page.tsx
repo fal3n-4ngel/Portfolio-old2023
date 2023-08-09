@@ -7,8 +7,8 @@ export default function Home() {
   return (
     
     <main className="items-center justify-center overflow-x-hidden">
-      <nav className="md:fixed w-full  z-10 flex justify-between py-14 px-[15%] text-xl text-gray-300  ">
-        <div className="hover:cursor-pointer text-gray-100 ">Adi</div>
+      <nav className="fixed w-full  z-10 flex justify-between py-14 px-[15%] text-xl text-gray-300  ">
+        <div className="hover:cursor-pointer text-gray-100">Adi</div>
         <div className="flex gap-[40%] invisible md:visible ">
           <a className="hover:cursor-pointer hover:text-white transition-all" href="#">
             home
