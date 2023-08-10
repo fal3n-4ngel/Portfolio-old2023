@@ -199,9 +199,9 @@ export default function Home() {
           >
             Github
           </a>
-          <div className="text-slate-600 font-light text-center text-2xl mt-10">
+          <div className="text-slate-600 font-light text-center text-xl md:text-2xl mt-10">
             {" "}
-            Visit my github to see rest of my works.
+            Design Inspired by multiple Dribble and Behance References.
           </div>
         </div>
       </div>
