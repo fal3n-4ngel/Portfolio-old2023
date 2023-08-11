@@ -20,7 +20,7 @@ function Projcard(props: projProps) {
   return (
     
     <div className="flex flex-col mt-10 w-full">
-      <div className="text-5xl my-8">{props.name}</div>
+      <div className="md:text-5xl text-4xl my-8">{props.name}</div>
       <Splide
         options={{
           type: "loop",
