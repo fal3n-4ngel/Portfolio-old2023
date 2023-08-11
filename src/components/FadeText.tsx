@@ -40,9 +40,9 @@ const FadeText: React.FC<FadeTextProps> = ({ children }) => {
 
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-      tl.set(lines, { opacity: 0.2, y: '10%' });
+      tl.set(lines, { opacity: 0.2, y: '15%' });
       tl.to(lines, {
-        duration: 1.5,
+        duration: 2.0,
         y: '0%',
         opacity: 1,
       });
