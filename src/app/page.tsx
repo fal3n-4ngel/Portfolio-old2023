@@ -81,10 +81,10 @@ export default function Home() {
           <div> App dev and Scripting. </div>
         </RevealText>
       </div>
-      <div className="min-h-[89vh]  mt-16 flex md:hidden font-extralight text-4xl md:text-7xl leading-[3.5rem] tracking-[0px] w-full px-[20px] py-[20%] items-center">
+      <div className="min-h-[89vh]  mt-16 flex md:hidden font-extralight text-[2.20rem] md:text-7xl leading-[3.5rem] tracking-[0px] w-full px-[20px] py-[20%] items-center">
         <RevealText>
           <div>I&apos;m Adi - a</div>
-          <div> Versatile Developer  </div>
+          <div> Versatile Developer </div>
           <div> adept in the </div>
           <div>realms of Web,</div>
           <div> App development </div>
