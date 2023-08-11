@@ -29,7 +29,7 @@ export default function Home() {
             linkedin
           </a>
         </div>
-        <div className="md:hidden flex gap-[50%] px-10">
+        <div className="md:hidden flex gap-[50%] px-10 ">
           <a
             className="hover:cursor-pointer hover:text-white transition-all"
             href="#"
@@ -61,8 +61,11 @@ export default function Home() {
             className="hover:cursor-pointer hover:text-white transition-all"
             href="https://www.linkedin.com/in/fal3n-4ngel/"
           >
+           
             <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512" fill="#ffffff"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            
           </a>
+          
         </div>
         <a
           href="mailto:adiadithyakrishnan@gmail.com"
@@ -71,11 +74,11 @@ export default function Home() {
           contact
         </a>
       </nav>
-      <div className="h-full hidden md:flex invisible md:visible   font-light text-6xl  leading-[5rem] tracking-[0px] w-full px-[15%] py-[20%] items-center">
+      <div className="h-full hidden md:flex invisible md:visible   font-extralight text-6xl  leading-[4.5rem] tracking-[0px] w-full px-[15%] py-[20%] items-center">
         <RevealText>
           <div> I&apos;m Adi - a Versatile Developer </div>
           <div> adept in the realms of Web, </div>
-          <div> App dev and Scripting </div>
+          <div> App dev and Scripting. </div>
         </RevealText>
       </div>
       <div className="min-h-[89vh]  mt-16 flex md:hidden font-extralight text-4xl md:text-7xl leading-[3.5rem] tracking-[0px] w-full px-[25px] py-[20%] items-center">
