@@ -7,7 +7,7 @@ import Github from "/Github.png";
 export default function Home() {
   return (
     <main className="items-center justify-center overflow-x-hidden">
-      <nav className="fixed w-full  z-10 flex justify-between pt-6 md:pt-14 pb-6  md:pb-14 px-[13%] text-xl text-gray-300 md:bg-transparent bg-black  ">
+      <nav className="fixed w-full px-[10%] z-10 flex justify-between pt-6 md:pt-14 pb-6  md:pb-14 md:px-[13%] text-xl text-gray-300 md:bg-transparent bg-black  ">
         <div className="hover:cursor-pointer text-gray-100">Adi</div>
         <div className=" gap-[40%] hidden md:flex ">
           <a
@@ -29,7 +29,7 @@ export default function Home() {
             linkedin
           </a>
         </div>
-        <div className="md:hidden flex gap-[50%] px-10 ">
+        <div className="md:hidden flex gap-[40%] justify-around mx-[6%]">
           <a
             className="hover:cursor-pointer hover:text-white transition-all"
             href="#"
