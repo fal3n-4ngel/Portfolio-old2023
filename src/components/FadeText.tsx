@@ -21,7 +21,7 @@ const FadeText: React.FC<FadeTextProps> = ({ children }) => {
       }
     );
 
-    const currentRef = textRef.current; // Store the current value of textRef in a variable
+    const currentRef = textRef.current; 
 
     if (currentRef) {
       observer.observe(currentRef);
