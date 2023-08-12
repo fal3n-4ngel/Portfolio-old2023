@@ -32,7 +32,7 @@ export default function Home() {
         <div className="md:hidden flex gap-[40%] justify-around mx-[6%]">
           <a
             className="hover:cursor-pointer hover:text-white transition-all"
-            href="#"
+            href="https://github.com/fal3n-4ngel"
             
           >
             <svg
@@ -46,7 +46,7 @@ export default function Home() {
           </a>
           <a
             className="hover:cursor-pointer hover:text-white transition-all"
-            href="https://github.com/fal3n-4ngel"
+            href="https://twitter.com/fal3n_4ngel"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
