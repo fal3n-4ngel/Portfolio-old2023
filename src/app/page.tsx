@@ -74,7 +74,7 @@ export default function Home() {
           contact
         </a>
       </nav>
-      <div className="h-full hidden md:flex invisible md:visible   font-extralight text-6xl  leading-[4.5rem] tracking-[0px] w-full px-[15%] py-[20%] items-center">
+      <div className="h-full min-h-screen hidden md:flex invisible md:visible   font-extralight text-6xl  leading-[4.5rem] tracking-[0px] w-full px-[15%] py-[20%] items-center">
         <RevealText>
           <div> I&apos;m Adi - a Versatile Developer </div>
           <div> adept in the realms of Web, </div>
