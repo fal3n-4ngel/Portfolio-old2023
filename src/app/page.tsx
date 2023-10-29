@@ -152,7 +152,7 @@ export default function Home() {
 
                 <div className="py-1">
                   <div className="font-semibold">
-                    Sophomore in Btech(CSE)
+                    Third Year in Btech(CSE)
                     <span className="text-md text-gray-400"></span>
                   </div>
                   <div>Mar Baselios College Of Engineering</div>
