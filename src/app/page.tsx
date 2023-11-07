@@ -155,7 +155,7 @@ export default function Home() {
                     Third Year in Btech(CSE)
                     <span className="text-md text-gray-400"></span>
                   </div>
-                  <div>Mar Baselios College Of Engineering</div>
+                  <div>Mar Baselios College Of Engineering,TVM</div>
                   <div className="font-sans text-gray-400">2021 - Present</div>
                 </div>
               </FadeText>
