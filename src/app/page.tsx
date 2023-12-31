@@ -244,7 +244,7 @@ export default function Home() {
           </a>
           <div className="text-slate-600 font-light text-center text-xl md:text-2xl mt-10">
             {" "}
-            Design Inspired by multiple Dribble and Behance References.
+            ik kinda look plain now, so working on a new one rn
           </div>
         </div>
       </div>
