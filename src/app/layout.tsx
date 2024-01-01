@@ -1,3 +1,5 @@
+"use client"
+import { useEffect } from 'react'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -9,12 +11,15 @@ export const metadata = {
 }
 
 export default function RootLayout({
+  
   children,
 }: {
+  
   children: React.ReactNode
 }) {
+ 
   return (
-    <html lang="en">
+    <html lang="en" className='bg-[#e0e0e0] ' >
       <body className={inter.className}>{children}</body>
     </html>
   )

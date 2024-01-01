@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,45 +9,45 @@
 
 
 
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    scroll-behavior: smooth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+  -webkit-user-drag: none; 
+  
+}
+body::-webkit-scrollbar{
+display: none;
+}
+*{
+  -webkit-user-drag: none; /* Safari and older versions of Chrome */
+  user-drag: none; /* Standard */
+}
+.font-arone {
+  font-family: "AR One Sans", sans-serif;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.font-poppins{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  
 }
 
-.fade-in {
-  animation: fade-in 1s ease-in-out;
+
+.font-poppins2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
+.font-logo{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
 }
