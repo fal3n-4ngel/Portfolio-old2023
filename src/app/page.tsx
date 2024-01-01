@@ -24,6 +24,14 @@ export default function Home() {
     console.log("Debounced y:", value);
   }, 16);
 
+  type Transition$1 = {
+    ease: string;
+    type: string; // The type can be more specific if necessary
+    damping: number;
+    stiffness: number;
+    restDelta: number;
+  } | undefined;
+  
   debouncedX(x);
   debouncedY(y);
 
@@ -39,7 +47,7 @@ export default function Home() {
           damping: 10,
           stiffness: 45,
           restDelta: 0.0001,
-        }}
+        }as Transition$1}
     >
       
       <Navbar/>
@@ -57,7 +65,7 @@ export default function Home() {
           damping: 10,
           stiffness: 50,
           restDelta: 0.001,
-        }}
+        }as Transition$1}
       >
         <div className="h-[200px] w-[200px] bg-orange-500 rounded-full opacity-80 z-[-1]"></div>
       </motion.div>
@@ -76,7 +84,7 @@ export default function Home() {
           damping: 10,
           stiffness: 45,
           restDelta: 0.001,
-        }}
+        }as Transition$1}
       >
         <div className="h-[190px] w-[190px] bg-orange-500 rounded-full opacity-50 z-[-1]"></div>
       </motion.div>
@@ -94,7 +102,7 @@ export default function Home() {
           damping: 10,
           stiffness: 40,
           restDelta: 0.001,
-        }}
+        }as Transition$1}
       >
         <div className="h-[180px] w-[180px] bg-orange-500 rounded-full opacity-20 z-[-1]"></div>
       </motion.div>
