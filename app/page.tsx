@@ -79,7 +79,7 @@ export default function Home() {
       <section className="flex flex-col md:w-[70%] w-full h-full min-h-screen justify-center text-black dark:text-white p-3">
         <div className="flex flex-col md:text-8xl text-4xl font-poppins-regular p-2 ">
           <FadeUp className=" flex text-black  font-poppins ">
-            <h1 className="md:text-5xl text-xl">Hello</h1>
+            <h1 className="md:text-3xl text-xl">Hello</h1>
           </FadeUp>
 
           <AnimatedTextCharacter text="I'm Adithya Krishnan,"></AnimatedTextCharacter>
@@ -105,8 +105,8 @@ export default function Home() {
             <div className="  overflow-hidden ">
               <FadeUp>
                 <div className="  m-10 ease-in ">
-                As a third-year undergraduate student pursuing a Bachelor&apos;s degree in Computer Science and Engineering (CSE),
-                 I am actively seeking internship opportunities and freelancing projects.( I&apos;m currently jobless 🚶)
+                As a third-year undergraduate  pursuing a Btech degree in CSE,
+                 I am actively seeking internships and freelancing projects.( I&apos;m currently jobless 🚶)
                 </div>
               </FadeUp>
             </div>
@@ -283,7 +283,7 @@ export default function Home() {
           </a>
           <div className="text-slate-600 font-light text-center text-xl md:text-2xl mt-10">
             {" "}
-            ik kinda look plain now, so working on a new one rn
+            ik kinda looks plain now, so working on a new one rn
           </div>
         </div>
       </div>
