@@ -255,7 +255,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="min-h-screen font-light text-4xl md:w-[75%] p-10 md:p-0 mx-auto">
+      <div className="min-h-screen font-light text-4xl md:w-[75%] p-5 md:p-0 mx-auto">
         <FadeUp>
           <div className="md:text-6xl text-5xl">Projects</div>
         </FadeUp>
