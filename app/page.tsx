@@ -68,14 +68,54 @@ export default function Home() {
           {
             type: "spring",
             damping: 15,
+            stiffness: 60,
+            restDelta: 0.00000001,
+          } as Transition$1
+        }
+      >
+        <div className="h-[50px] w-[50px] bg-black dark:bg-orange-100 rounded-full  z-[-1] opacity-50 "></div>
+      </motion.div>
+      <motion.div
+        className="hidden md:flex"
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+        }}
+        animate={{ x: xd, y: yd, top: 0, left: 0 }}
+        transition={
+          {
+            type: "spring",
+            damping: 15,
+            stiffness: 70,
+            restDelta: 0.00000001,
+          } as Transition$1
+        }
+      >
+        <div className="h-[50px] w-[50px] bg-black dark:bg-orange-100 rounded-full  z-[-1] opacity-[80%]"></div>
+      </motion.div>
+      <motion.div
+        className="hidden md:flex"
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+        }}
+        animate={{ x: xd, y: yd, top: 0, left: 0 }}
+        transition={
+          {
+            type: "spring",
+            damping: 15,
             stiffness: 80,
             restDelta: 0.00000001,
           } as Transition$1
         }
       >
-        <div className="h-[30px] w-[30px] bg-black dark:bg-orange-100 rounded-full  z-[-1] "></div>
+        <div className="h-[50px] w-[50px] bg-black dark:bg-orange-100 rounded-full  z-[-1] "></div>
       </motion.div>
-      <div className="w-full fixed z-[10]"><Navbar/></div>
+      <div className="w-full fixed z-[10]">
+        <Navbar />
+      </div>
       <section className="flex flex-col md:w-[70%] w-full h-full min-h-screen justify-center text-black dark:text-white p-3">
         <div className="flex flex-col md:text-8xl text-4xl font-poppins-regular p-2 ">
           <FadeUp className=" flex text-black  font-poppins ">
@@ -99,14 +139,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" w-full h-full ">
+      <section className=" w-full h-full z-[10]">
         <div className="flex md:flex-row flex-col w-[80%] mx-auto justify-center items-center  min-h-screen">
           <div className="flex flex-col md:w-[60%] md:text-4xl text-2xl">
             <div className="  overflow-hidden ">
               <FadeUp>
                 <div className="  m-10 ease-in ">
-                As a third-year undergraduate  pursuing a Btech degree in CSE,
-                 I am actively seeking internships and freelancing projects.( I&apos;m currently jobless 🚶)
+                  As a third-year undergraduate pursuing a Btech degree in CSE,
+                  I am actively seeking internships and freelancing projects. (
+                  I&apos;m currently jobless 🚶)
                 </div>
               </FadeUp>
             </div>
@@ -122,7 +163,7 @@ export default function Home() {
               <FadeUp>
                 <div className="  m-10 ease-in ">
                   I spent my free time either &lsquo;watching or reading or
-                  coding&rsquo; stupid stuff , or attending random hackathons with my friends
+                  coding&rsquo; stupid stuff
                 </div>
               </FadeUp>
             </div>
@@ -159,8 +200,6 @@ export default function Home() {
                   nov 2022 - Present
                 </div>
               </div>
-
-              
             </FadeUp>
             <FadeUp>
               <div className=" text-2xl text-zinc-700 mt-5 py-2 font-semibold ">
@@ -181,19 +220,29 @@ export default function Home() {
               <div className="flex flex-col font-normal space-y-1">
                 <div className="py-1">
                   <div className="font-semibold">
-                    Web3 for India 2030 Winners
+                    Web3 for India 2030 Winner
                     <span className="text-md text-gray-400"></span>
                   </div>
-                  <div>kerala Block Chain Academy</div>
-                  <div className="font-sans text-gray-400">2023</div>
+                  <div>BlockHash | kerala Block Chain Academy</div>
+                  <a
+                    href="https://github.com/Deflated-Pappadam"
+                    className="font-sans text-gray-400 hover:text-white"
+                  >
+                    2023 (Team deflated pappadam)
+                  </a>
                 </div>
                 <div className="py-1">
                   <div className="font-semibold">
-                     Best Design , First Runner Up
+                    Best Design , First Runner Up
                     <span className="text-md text-gray-400"></span>
                   </div>
-                  <div>CodeCrypt Hackathon ,Cusat</div>
-                  <div className="font-sans text-gray-400">2023</div>
+                  <div>CodeCrypt Hackathon | Cusat</div>
+                  <a
+                    href="https://github.com/Deflated-Pappadam"
+                    className="font-sans text-gray-400 hover:text-white"
+                  >
+                    2023 (Team deflated pappadam)
+                  </a>
                 </div>
               </div>
             </FadeUp>

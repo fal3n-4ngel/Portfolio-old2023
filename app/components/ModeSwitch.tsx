@@ -7,8 +7,12 @@ export default function DarkModeSwitch() {
   const [isOn, setIsOn] = useState(false);
 
   useEffect(() => {
-    
+    if (typeof window !== 'undefined') {
+      setIsOn(localStorage.getItem('theme') === 'dark');
+      toggleSwitch();
+    }
   }, []);
+ 
 
   const toggleSwitch = () => {
     const newState = !isOn;
