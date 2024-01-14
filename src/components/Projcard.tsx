@@ -19,7 +19,7 @@ function Projcard(props: projProps) {
   
   return (
     
-    <div className="flex flex-col mt-10 w-full">
+    <div className="flex flex-col mt-10 w-full p-5">
       <div className="md:text-5xl text-4xl my-8">{props.name}</div>
       <Splide
         options={{
@@ -29,18 +29,15 @@ function Projcard(props: projProps) {
           arrows: false,
           drag:true,
           
-          
-          
-          
         }} 
+        className=""
       >
         <SplideSlide className="delay-1000 pointer-events-none">
           <Image
             src={props.url1}
             alt={props.name}
             className="w-full object-cover overflow-hidden  md:h-[95%]"
-            width={1980}
-            height={900}
+            fill
           />
         </SplideSlide>
         <SplideSlide>
@@ -48,9 +45,7 @@ function Projcard(props: projProps) {
             src={props.url2}
             alt={props.name}
             className="w-full object-cover overflow-hidden  md:h-[95%]"
-            width={1980}
-            height={900}
-            
+            fill
           />
         </SplideSlide>
         <SplideSlide>
@@ -59,7 +54,7 @@ function Projcard(props: projProps) {
             alt={props.name}
             className="w-full object-cover overflow-hidden  md:h-[95%]"
             width={1980}
-            height={900}
+            height={1500}
           />
         </SplideSlide>
       </Splide>
