@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.colorChangingComponent {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000; /* Initial color */
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hovered {
+  filter: invert(100%);
+}
+
+.font-arone {
+  font-family: "AR One Sans", sans-serif;
+}
+
+.font-poppins{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  
+}
+
+
+.font-poppins-regular{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.font-logo{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+}
