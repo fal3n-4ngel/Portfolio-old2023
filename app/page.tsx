@@ -150,7 +150,7 @@ export default function Home() {
           <div className="flex flex-col md:w-[60%] md:text-4xl text-2xl">
             <div className="  overflow-hidden ">
               <FadeUp>
-                <div className="  m-10 ease-in ">
+                <div className="  md:m-10 m-5 ease-in ">
                   As a third-year undergraduate pursuing a Btech degree in CSE,
                   I am actively seeking internships and freelancing projects. (
                   I&apos;m currently jobless 🚶)
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
             <div className="  overflow-hidden">
               <FadeUp>
-                <div className=" m-10 ease-in ">
+                <div className="  md:m-10 m-5 ease-in ">
                   With a passion for bringing ideas to life, I thrive on solving
                   puzzles, fixing bugs, tackling mind-boggling problems.
                 </div>
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
             <div className="  overflow-hidden">
               <FadeUp>
-                <div className="  m-10 ease-in ">
+                <div className="   md:m-10 m-5 ease-in ">
                   I spent my free time either &lsquo;watching or reading or
                   coding&rsquo; stupid stuff
                 </div>
