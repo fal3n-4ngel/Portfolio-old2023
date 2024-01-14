@@ -122,11 +122,17 @@ export default function Home() {
             <h1 className="md:text-3xl text-xl">Hello</h1>
           </FadeUp>
 
-          <AnimatedTextCharacter text="I'm Adithya Krishnan,"></AnimatedTextCharacter>
-
-          <AnimatedTextCharacter text="a Versatile developer who"></AnimatedTextCharacter>
-
-          <AnimatedTextCharacter text="likes to code fun stuff"></AnimatedTextCharacter>
+          <div className="md:flex flex-col hidden">
+            <AnimatedTextCharacter text="I'm Adithya Krishnan,"></AnimatedTextCharacter>
+            <AnimatedTextCharacter text="a Versatile developer who"></AnimatedTextCharacter>
+            <AnimatedTextCharacter text="likes to code fun stuff"></AnimatedTextCharacter>
+          </div>
+          <div className="flex flex-col md:hidden">
+            <AnimatedTextCharacter text="I'm Adithya Krishnan,"></AnimatedTextCharacter>
+            <AnimatedTextCharacter text="a Versatile developer"></AnimatedTextCharacter>
+            <AnimatedTextCharacter text="who likes to "></AnimatedTextCharacter>
+            <AnimatedTextCharacter text="code fun stuff"></AnimatedTextCharacter>
+          </div>
           {/* <FadeSide>
           I'm Adithya Krishnan,
           </FadeSide >
