@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" w-full h-full z-[10]">
+      <section className=" w-full h-full z-[5]">
         <div className="flex md:flex-row flex-col w-[80%] mx-auto justify-center items-center  min-h-screen">
           <div className="flex flex-col md:w-[60%] md:text-4xl text-2xl">
             <div className="  overflow-hidden ">
@@ -174,9 +174,9 @@ export default function Home() {
               </FadeUp>
             </div>
           </div>
-          <div className="flex flex-col md:w-[50%] w-[90%] text-base md:pl-[20%] mx-auto tracking-wider">
+          <div className="flex flex-col md:w-[50%] w-[90%] text-base md:pl-[20%] mx-auto tracking-wider z-[-1]">
             <FadeUp>
-              <div className=" text-2xl text-zinc-700 mt-5 py-2 font-semibold ">
+              <div className=" text-2xl text-zinc-700 mt-5 py-2 font-semibold z-[-1] ">
                 experience
               </div>
 
@@ -245,7 +245,7 @@ export default function Home() {
                   <div>CodeCrypt Hackathon | Cusat</div>
                   <a
                     href="https://github.com/Deflated-Pappadam"
-                    className="font-sans text-gray-400 hover:text-white"
+                    className="font-sans text-gray-400 hover:text-white "
                   >
                     2023 (Team deflated pappadam)
                   </a>
