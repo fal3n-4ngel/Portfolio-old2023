@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <nav className="flex  w-full md:w-[90%] min-h-[50px] items-center justify-between py-5  m-5 px-[10px] mx-auto z-[1] overflow-hidden">
+    <nav className="flex  w-full md:w-[90%] min-h-[100px] items-center justify-between py-5 pb-10 px-[10px] mx-auto z-[1] overflow-hidden md:bg-[#e0e0e000] bg-gradient-to-b dark:from-[#121212] from-[#e0e0e0] via-[#e0e0e0] dark:via-[#121212] to-[#12121200]">
         <div className="font-poppins md:text-[3rem] text-[2.5rem] dark:text-white text-black">Adi.</div>
 
         <div className="flex items-center md:justify-normal  gap-[20px] ">

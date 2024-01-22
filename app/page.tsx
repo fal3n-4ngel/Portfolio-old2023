@@ -27,19 +27,16 @@ export default function Home() {
 
   const debouncedX = debounce((value) => {
     setxd(x);
-    console.log("Debounced x:", value);
   }, 16);
 
   const debouncedY = debounce((value) => {
     setyd(y);
-    console.log("Debounced y:", value);
   }, 16);
 
   useEffect(() => {
     debouncedX(x);
     debouncedY(y);
-    return () => {};
-  });
+  }, [x, y]);
 
   return (
     <motion.main
