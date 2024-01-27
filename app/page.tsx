@@ -52,7 +52,7 @@ export default function Home() {
             {
               type: "spring",
               damping: 20,
-              stiffness: 65,
+              stiffness: 61,
             } as Transition$1
           }
         >
