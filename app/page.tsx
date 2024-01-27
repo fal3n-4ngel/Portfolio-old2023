@@ -15,7 +15,6 @@ type Transition$1 =
       type: string; // The type can be more specific if necessary
       damping: number;
       stiffness: number;
-      restDelta: number;
     }
   | undefined;
 
@@ -40,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative ">
         <motion.div
           className="hidden md:flex"
           style={{
@@ -52,9 +51,8 @@ export default function Home() {
           transition={
             {
               type: "spring",
-              damping: 15,
+              damping: 20,
               stiffness: 60,
-              restDelta: 0.00000001,
             } as Transition$1
           }
         >
@@ -71,9 +69,8 @@ export default function Home() {
           transition={
             {
               type: "spring",
-              damping: 15,
+              damping: 20,
               stiffness: 70,
-              restDelta: 0.00000001,
             } as Transition$1
           }
         >
@@ -90,16 +87,15 @@ export default function Home() {
           transition={
             {
               type: "spring",
-              damping: 15,
+              damping: 20,
               stiffness: 80,
-              restDelta: 0.00000001,
             } as Transition$1
           }
         >
           <div className="h-[50px] w-[50px] bg-black dark:bg-orange-100 rounded-full  z-[-1] "></div>
         </motion.div>
       </div>
-      <motion.main
+      <main
         className="flex flex-col justify-between items-center w-full h-full min-h-screen bg-[#e0e0e0] dark:bg-[#121212] text-black dark:text-white font-poppins transition-all duration-200 z-[1]"
         ref={ref}
       >
@@ -333,7 +329,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </motion.main>
+      </main>
     </>
   );
 }

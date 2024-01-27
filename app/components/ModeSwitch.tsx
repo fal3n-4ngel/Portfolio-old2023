@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { RiMoonClearFill, RiSunFill } from 'react-icons/ri';
 
 export default function DarkModeSwitch() {
-  const [isOn, setIsOn] = useState(false);
+  const [isOn, setIsOn] = useState(true);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
